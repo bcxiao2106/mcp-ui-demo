@@ -36,13 +36,14 @@ const mcpClient = new MultiServerMCPClient({
   },
 });
 
+// create toolSchema
 const toolSchema = z.object({});
 // load tools (returns flattened list of MCP tools wrapped for LangChain)
 const mcpTools = await mcpClient.getTools(); // -> array of { name, description, ... }
 // quick description string (silence TS implicit any with a cast)
 const toolsDesc = mcpTools.map((t: any) => `- ${t.name}: ${t.description}`).join("\n");
 
-// Assuming mcpTools is an array of tool definitions from your MCP client
+// lagChainTool wrapping, Assuming mcpTools is an array of tool definitions from your MCP client
 const langChainTools = mcpTools.map(tool => new DynamicStructuredTool({
   name: tool.name,
   description: tool.description,
