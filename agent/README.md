@@ -1,14 +1,14 @@
-# typescript-server-demo
+# mcp-ui agent
 
 ...
 
 ## Running the agent
 
-To run the server in development mode, first install the dependencies, then run the `dev` command:
+To run the server in development mode, first install the dependencies, then run the `start` command:
 
 ```bash
 pnpm install
-pnpm run start
+pnpm start
 ```
 
 The server will be available at `http://localhost:4571`.
