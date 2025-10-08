@@ -1,0 +1,33 @@
+{
+  "name": "agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node agent.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@langchain/core": "^0.3.78",
+    "@langchain/mcp-adapters": "^0.6.0",
+    "@langchain/openai": "^0.6.14",
+    "@mcp-ui/client": "^5.12.0",
+    "@modelcontextprotocol/sdk": "^1.19.1",
+    "@remote-dom/core": "^1.10.0",
+    "cross-fetch": "^4.1.0",
+    "express": "^5.1.0",
+    "langchain": "^0.3.35",
+    "langchain-mcp-adapters": "^0.6.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.7.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+
+    // remove or disable this line 👇
+    // "verbatimModuleSyntax": true,
+
+    // keep this to support top-level await:
+    "isolatedModules": true
+  }
+}
